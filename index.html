@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>BookMyStay</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- for icons	 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="icon" href="../../resources/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <a href="./index.html" class="navbar-brand"><i class="fa fa-cube"></i>Book<b>My</b><b>Stay</b></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+      <div class="navbar-form form-inline">
+        <div class="input-group search-box">
+          <input type="text" id="search" class="form-control" placeholder="Search for destinations" />
+          <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+        </div>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a href="./index.html" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="./src/booking/booking.html" class="nav-item nav-link"><i class="fa fa-calendar-o"></i><span>Book
+            Now</span></a>
+        <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-cube"></i><span>Reports</span></a> -->
+        <a href="./src/helpContactUs/helpContactUs.html" class="nav-item nav-link"><i
+            class="fa fa-envelope"></i><span>Contact Us</span></a>
+        <a href="./src/aboutUs/aboutUs.html" class="nav-item nav-link"><i class="fa fa-users"></i><span>About
+            Us</span></a>
+        <a href="./src/signup/signup.html" class="nav-item nav-link"><i
+            class="fa-solid fa-user-plus"></i><span>SignUp</span></a>
+        <a href="./src/signin/signin.html" class="nav-item nav-link"><i
+            class="fa-sharp fa-solid fa-right-to-bracket"></i><span>Sign in</span></a>
+        <a href="" class="nav-item nav-link" onclick="handleSignOut()"><i
+            class="fa-sharp fa-solid fa-door-open"></i><span>Sign Out</span></a>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+
+
+
+  <!-- main page work starts  -->
+  <header id="home">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-lg-4 col-12 lobster-font-family d-flex align-items-center">
+          <h2>It is a long established fact that a reader will be distracted by the readablen</h2>
+          <button><a href="#">About Hotel</a></button>
+        </div>
+      </div>
+      <div class="h-slider roboto-font-family welcome d-flex align-items-center justify-content-center">
+        <h1 class="text-capitalize">Unforgettable Luxury Experiences<br><span>BookMyStay</span></h1>
+        <div id="headerslider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-three active"></div>
+            <div class="carousel-item carousel-two"></div>
+            <div class="carousel-item carousel-one"></div>
+          </div>
+          <a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
+            <i class="fas fa-angle-double-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
+            <i class="fas fa-angle-double-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="st-rec"></div>
+    <div class="rd-rec"></div>
+  </header>
+  <!-- Booking Status -->
+
+  <div id="parentDiv">
+    <!-- booking work -->
+  </div>
+  <div class="about lobster-font-family">
+    <div class="container">
+      <h2 class="text-center text-capitalize">About our hotel</h2>
+      <!-- <img src="./resources/shape.png"> -->
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <h4>Where Hospitality Meets Elegance</h4>
+          <p>Welcome to BookMyStay, where your dream accommodations come to life. With our extensive selection of
+            hotels, you can
+            find the perfect place to make your stay truly memorable. From cozy boutique hotels to luxurious resorts, we
+            offer a
+            range of options to suit every traveler's taste and budget. With our easy-to-use booking platform, securing
+            your ideal
+            stay has never been simpler. Whether you're planning a business trip or a leisurely vacation, let BookMyStay
+            be your
+            trusted companion in finding the perfect home away from home.</p>
+          <button><a href="./src/aboutUs/aboutus.html">Read more</a></button>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="img"></div>
+        </div>
+      </div>
+      <h2 class="text-capitalize" id="room">Rooms & suits</h2>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="img"></div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <div class="block">
+            <div>
+              <!-- <img src="./resources/shape.png"> -->
+              <strong>₹4999.00</strong>
+              <h5>Honeymoon Suite</h5>
+              <p>Escape to pure bliss in our Honeymoon Suite, where romance takes center stage. Indulge in luxury and
+                privacy as you
+                embark on an enchanting journey filled with unforgettable moments. Immerse yourselves in opulent
+                surroundings, soak in a
+                private jacuzzi, and awaken to breathtaking views. Let our Honeymoon Suite be the perfect sanctuary for
+                your love story
+                to unfold.</p>
+              <button><a href="./src/booking/booking.html" class="text-capitalize">Book Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about lobster-font-family">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="imgTwo"></div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <div class="block">
+            <div>
+              <!-- <img src="./resources/shape.png"> -->
+              <strong>₹2999.00</strong>
+              <h5>Premium Suite</h5>
+              <p>Experience unrivaled elegance and sophistication in our Premium Suite. Immerse yourself in lavish
+                comfort and
+                contemporary design, where every detail is thoughtfully curated for the discerning traveler. From the
+                spacious living
+                area to the indulgent amenities, your stay in our Premium Suite promises a truly elevated experience
+                that redefines
+                luxury.</p>
+              <button><a href="./src/booking/booking.html" class="text-capitalize">Book Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="imgTwo"></div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <div class="block">
+            <div>
+              <!-- <img src="./resources/shape.png"> -->
+              <strong>₹1799.00</strong>
+              <h5>Standard Room</h5>
+              <p>Discover a comfortable haven in our Standard Rooms, where simplicity meets comfort. Designed with your
+                needs in mind,
+                these well-appointed rooms offer a cozy retreat after a day of exploration. Unwind in a welcoming
+                atmosphere and enjoy
+                essential amenities that cater to your convenience. Rest assured, your stay in our Standard Room will be
+                a delightful
+                and restful experience.</p>
+              <button><a href="./src/booking/booking.html" class="text-capitalize">Book Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar">
+    <span class="bar_content">
+      Experience Unparalleled Luxury at Unbeatable Prices! Book Now with Promo Code EXCITE25 for 25% Off Your Dream
+      Getaway.
+    </span>
+  </div>
+
+  <div class="gallery lobster-font-family" id="blog">
+    <div class="container">
+      <h2 class="text-calitalize text-center">Our gallery</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="pic-one">
+            <h4 style="color: whitesmoke;">Relaxed Swimming</h4>
+          </div>
+          <div class="pic-two">
+            <h4 style="color: whitesmoke;">Luxury Transportation</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="pic-three active">
+            <h4 style="color: whitesmoke;">Exclusive Club Lounge</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="pic-four">
+            <h4 style="color: whitesmoke;">Romantic Dinner</h4>
+          </div>
+          <div class="pic-five">
+            <h4 style="color: whitesmoke;">Spa & Fitness</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider main-font-family">
+    <h2 class="text-center text-capitalize main-font-family">Testimonials</h2>
+    <div id="slideToNext" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#slideToNext" data-slide-to="0" class="active"></li>
+        <li data-target="#slideToNext" data-slide-to="1"></li>
+        <li data-target="#slideToNext" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption d-block">
+            <img src="./resources/elon.webp">
+            <h5>Elon Musk</h5>
+            <p>I cannot recommend BookMyStay enough! The exceptional customer service I received when I had to make
+              changes to my
+              reservation was outstanding. The support team was responsive, understanding, and went above and beyond to
+              ensure my
+              needs were met. I am grateful for their assistance and will continue to book with BookMyStay.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-block">
+            <img src="./resources/mukesh.webp">
+            <h5>Mukesh Ambani</h5>
+            <p>I have been using BookMyStay for all my business trips, and I can't imagine planning my stays without it.
+              The platform
+              offers a wide range of business-friendly hotels, and their attention to detail ensures a smooth and
+              hassle-free
+              experience. BookMyStay has become my go-to for all my hotel reservations.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-block">
+            <img src="./resources/jonny.jpg">
+            <h5>Jonny</h5>
+            <p>Our honeymoon wouldn't have been as incredible without BookMyStay. The exclusive deals, personalized
+              recommendations,
+              and breathtaking honeymoon suite we booked through the website made it a truly romantic and unforgettable
+              experience.
+              We're grateful for the exceptional service and attention to detail provided by BookMyStay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact main-font-family text-center">
+    <div class="container">
+      <h2 id="contact">Get a call </h2>
+      <div class="row">
+        <div class="col-6">
+          <div class="contact-form">
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Phone">
+              <textarea placeholder="Message"></textarea>
+              <input type="submit" value="submit">
+          </div>
+        </div>
+        </form>
+        <div class="col-6">
+          <h2 class="text-right">Unlock the Perfect Escape: Book Your Holiday Best for Relaxed Retreats and Cultural
+            Encounters.</h2>
+          <!-- <img src="./resources/shape.png"> -->
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <!-- main page work ends -->
+
+  <!-- countdown timer starts -->
+  <div class="clock-container">
+    <div class="clock">
+      <p class="clock-label" id="demo"></p>
+      <p style="font-size: x-large; color: black">Do Not Miss Offer</p>
+      <p style="font-size: large; color: brown">
+        Apply Promo code FIRSTTIMER
+      </p>
+    </div>
+  </div>
+  <!-- countdown timer ends -->
+
+  <!-- footer section starts here -->
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInLeft;
+                ">
+              <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+              <p>Don't miss any updates of our new offers!</p>
+              <div class="f_subscribe_two mailchimp">
+                <input type="email" name="EMAIL" class="form-control memail" placeholder="youremail@gmail.com" />
+                <button class="btn btn_get btn_get_two" type="submit">
+                  Subscribe Us
+                </button>
+                <p class="mchimp-errmessage" style="display: none"></p>
+                <p class="mchimp-sucmessage" style="display: none"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="
+                  visibility: visible;
+                  animation-delay: 0.4s;
+                  animation-name: fadeInLeft;
+                ">
+              <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+              <ul class="list-unstyled f_list">
+                <li><a href="#">Android App</a></li>
+                <li><a href="#">ios App</a></li>
+                <li><a href="#">Web App</a></li>
+                <li><a href="#">Company Policy</a></li>
+                <li><a href="#">Booking Slips</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="
+                  visibility: visible;
+                  animation-delay: 0.6s;
+                  animation-name: fadeInLeft;
+                ">
+              <h3 class="f-title f_600 t_color f_size_18">
+                Help and Support
+              </h3>
+              <ul class="list-unstyled f_list">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms &amp; conditions</a></li>
+                <li><a href="#">Report an isseue</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Support Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="
+                  visibility: visible;
+                  animation-delay: 0.8s;
+                  animation-name: fadeInLeft;
+                ">
+              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+              <div class="f_social_icon">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bg">
+        <div class="footer_bg_one"></div>
+        <div class="footer_bg_two"></div>
+        <!-- <div class="footer_bg_three"></div>  as not working properly-->
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-7">
+            <p class="mb-0 f_400">© Made by team codeCrafters with Love</p>
+          </div>
+          <div class="col-lg-6 col-sm-5 text-right">
+            <p>
+              All Rights Reserved by BookMyStay<a href="http://cakecounter.com" target="_blank">CakeCounter</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section ends here -->
+</body>
+<script src="script.js"></script>
+<script src="signOut.js"></script>
+
+</html>

@@ -1,0 +1,165 @@
+{
+  "admin": [
+    {
+      "email": "admin@gmail.com",
+      "password": "admin"
+    }
+  ],
+  "user": [
+    {
+      "email": "xyz@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "abc@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2ref",
+      "mob": "23232331",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "bbbbAAA@gmail.com",
+      "name": "Razziv",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "email": "er.antaryami@gmail.com",
+      "name": "Antaryami Sahoo",
+      "address": "Keonjhar Odisha",
+      "mob": "8926194183",
+      "password": "Antaryami@12345",
+      "id": 4
+    },
+    {
+      "email": "abc@gmil.com",
+      "name": "Dipti",
+      "address": "Keonjhar Odisha",
+      "mob": "8926194183",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "email": "razzivofficial@gmail.com",
+      "name": "Razziv",
+      "address": "Keonjhar Odisha",
+      "mob": "854863184212",
+      "password": "123",
+      "id": 6
+    }
+  ],
+  "bookedUsers": [
+    {
+      "uname": "Diptiranjan Sahoo",
+      "adhaar": "2579898492899090",
+      "checkin": "2023-07-18",
+      "checkout": "2023-07-28",
+      "noOfRooms": "1",
+      "noOfAdults": "2",
+      "noOfChilds": "0",
+      "roomType": "honeymoon",
+      "promoCode": "",
+      "email": "iamdiptiranjan2004@gmail.com",
+      "phone": "178376284629",
+      "bookingStatus": "Pending",
+      "id": "1689537368955"
+    },
+    {
+      "uname": "Diptiranjan",
+      "adhaar": "3333344433333333",
+      "checkin": "2023-07-20",
+      "checkout": "2023-07-28",
+      "noOfRooms": "3",
+      "noOfAdults": "2",
+      "noOfChilds": "1",
+      "roomType": "deluxe",
+      "promoCode": "",
+      "email": "er.antaryami@gmail.com",
+      "phone": "854863184212",
+      "bookingStatus": "Pending",
+      "id": "1689544219133"
+    },
+    {
+      "uname": "Dipti",
+      "adhaar": "7777777777777777",
+      "checkin": "2023-07-18",
+      "checkout": "2023-07-22",
+      "noOfRooms": "2",
+      "noOfAdults": "3",
+      "noOfChilds": "0",
+      "roomType": "suite",
+      "promoCode": "",
+      "email": "xyz@gmail.com",
+      "phone": "854863184212",
+      "bookingStatus": "Booking Cancelled",
+      "id": "1689544284688"
+    },
+    {
+      "uname": "asdf",
+      "adhaar": "1234567894567815",
+      "checkin": "2023-07-19",
+      "checkout": "2023-07-28",
+      "noOfRooms": "2",
+      "noOfAdults": "2",
+      "noOfChilds": "1",
+      "roomType": "honeymoon",
+      "promoCode": "",
+      "email": "dashrajiv@gmail.com",
+      "phone": "8926194183",
+      "bookingStatus": "Pending",
+      "id": "1689544410437"
+    },
+    {
+      "uname": "Rama",
+      "adhaar": "5395597275928572",
+      "checkin": "2023-07-19",
+      "checkout": "2023-07-31",
+      "noOfRooms": "2",
+      "noOfAdults": "2",
+      "noOfChilds": "0",
+      "roomType": "deluxe",
+      "promoCode": "",
+      "email": "razzivdash@gmail.com",
+      "phone": "8926194183",
+      "bookingStatus": "Pending",
+      "id": "1689544447336"
+    },
+    {
+      "uname": "Rajiv Lochan Dash",
+      "adhaar": "7777777777777777",
+      "checkin": "2023-07-17",
+      "checkout": "2023-07-19",
+      "noOfRooms": "1",
+      "noOfAdults": "2",
+      "noOfChilds": "0",
+      "roomType": "honeymoon",
+      "promoCode": "HONEYMOON",
+      "email": "dashrajiv@gmail.com",
+      "phone": "9437180784",
+      "bookingStatus": "Pending",
+      "id": "1689545866298"
+    },
+    {
+      "uname": "Diptiranjan Sahoo",
+      "adhaar": "2579898492",
+      "checkin": "2023-07-22",
+      "checkout": "2023-08-04",
+      "noOfRooms": "2",
+      "noOfAdults": "2",
+      "noOfChilds": "0",
+      "roomType": "suite",
+      "promoCode": "",
+      "email": "abc@gmail.com",
+      "phone": " 97679879890",
+      "bookingStatus": "Booking Confirmed",
+      "id": "1689923118775"
+    }
+  ]
+}

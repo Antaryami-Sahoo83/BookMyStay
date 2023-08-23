@@ -1,0 +1,16 @@
+{
+  "name": "bookmystay",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000B\u0000o\u0000o\u0000k\u0000M\u0000y\u0000S\u0000t\u0000a\u0000y\u0000\r\u0000 \u0000",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch data.json  --port 7070"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
