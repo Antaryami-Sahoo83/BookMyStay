@@ -1,6 +1,6 @@
 ## Project Title
 
-Welcome to the repository for our website! BookMyShow is aimed at building an engaging and user-friendly website for our hotel using HTML, CSS, and JavaScript DOM. The goal is to showcase our hotel's offerings, provide information to potential guests, and offer an easy-to-use booking system.
+Welcome to the repository for our website! BookMyStay is aimed at building an engaging and user-friendly website for our hotel using HTML, CSS, and JavaScript DOM. The goal is to showcase our hotel's offerings, provide information to potential guests, and offer an easy-to-use booking system.
 
 ## Features
 
